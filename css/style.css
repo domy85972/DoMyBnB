@@ -15,24 +15,40 @@ nav .brand-logo {
   color: #ef3550;
 }
 
-nav .nav-wrapper {
-    padding: 0 50px;
-}
-
 nav .brand-logo {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.side-nav a {
-  color: #ef3550;
-    font-size: 14px;
-    font-weight: 500;
-    height: 48px;
-    line-height: 48px;
+.nav-wrapper {
+  padding: 0 50px;
 }
 
 p {
   line-height: 2rem;
+}
+
+.side-nav a {
+  color: #ef3550;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  display: block;
+}
+
+element.style {
+  opacity: +2;
+}
+
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 997;
+  will-change: opacity;
 }
 
 .button-collapse {
@@ -45,13 +61,14 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .section-intro{
-    height: 100%;
-    width: 100%;
-  }
 
-  .header {
-    margin-top: 15%;
+.section-intro{
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  margin-top: 15%;
 }
 
 .header-subtitle {
@@ -64,20 +81,23 @@ p {
     position: absolute;
     top: 40%;
   }
+  
   #index-banner .section {
     top: 10%;
   }
+
 }
 
+
 @media only screen and (max-width : 600px) {
+  
   #index-banner .section {
     top: 0;
   }
 
-  nav .nav-wrapper {
+ .nav-wrapper {
     padding: 0 10px;
   }
-
 }
 
 .col-servizio {
@@ -147,17 +167,3 @@ footer.page-footer {
   color: #ef3550
 }
 
-element.style {
-    opacity: -1;
-}
-
-#sidenav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120vh;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 997;
-    will-change: opacity;
-    }
