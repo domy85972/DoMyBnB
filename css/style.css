@@ -23,6 +23,14 @@ nav .brand-logo {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.side-nav a {
+  color: #ef3550;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+}
+
 p {
   line-height: 2rem;
 }
