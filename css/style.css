@@ -27,7 +27,12 @@ p {
   line-height: 2rem;
 }
 
+.side-nav a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
 .side-nav a {
+  
   color: #ef3550;
   font-size: 14px;
   font-weight: 500;
@@ -88,7 +93,6 @@ element.style {
 
 }
 
-
 @media only screen and (max-width : 600px) {
   
   #index-banner .section {
@@ -98,6 +102,36 @@ element.style {
  .nav-wrapper {
     padding: 0 10px;
   }
+
+  .side-nav a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+  .side-nav a {
+  
+    color: #ef3550;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+  }
+
+  element.style {
+    opacity: +2;
+  }
+
+  #sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 997;
+    will-change: opacity;
+  }
+
 }
 
 .col-servizio {
